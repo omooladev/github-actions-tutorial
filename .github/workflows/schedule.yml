@@ -5,7 +5,7 @@ on:
     - cron: "*/2 * * * *"
 
 jobs:
-  Print-Server-Date:
+  Print-Server-Date-Based-On-Schedule:
     runs-on: ubuntu-latest
     steps:
       - name: Print out the Current Server Date every 2 minutes
