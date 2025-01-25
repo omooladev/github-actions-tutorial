@@ -1,0 +1,10 @@
+name: "Schedule"
+
+on: [push]
+
+jobs:
+  Test-Schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo C
+        run: echo "The current server time is ${date}"
