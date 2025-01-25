@@ -1,12 +1,10 @@
-name: Schedule
+name: Server Date
 
-on:
-  schedule:
-    - cron: "*/2 * * * *"
+on: [push]
 
 jobs:
   Print-Server-Date:
     runs-on: ubuntu-latest
     steps:
-      - name: Print out the Current Server Date every 2 minutes
+      - name: Print out the Current Server Date
         run: echo "The current Server Date is $(date)"
